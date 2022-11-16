@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome v.6 style cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap v.5 style cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- flatpicker style cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>الصفحة الرئيسية</title>
+</head>
+<body>
+    <!-- whole page -->
+    <main>
+        <!-- start header -->
+        <header id="header" class="pt-2 pb-2 mt-4 mb-4">
+
+            <section class="container">
+
+                <div class="row align-items-center">
+
+                    <!-- Logo -->
+                    <div class="col-md-3 col-6">
+                        <div id="main_logo">
+                            <img src="imgs/Logo 1.png" alt="main logo">
+                        </div>
+                    </div>
+
+                    <!-- navigation bar -->
+                    <div class="col-md-6">
+                        <nav class="navbar navbar-expand-lg navbar-light navSmallScreen">
+                            <div class="container-fluid">
+                              
+                              <div class="navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav justify-content-between w-100">
+
+                                  <li class="nav-item">
+                                    <a class="nav-link active"  href="#">الرئيسية</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">من نحن</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">تواصل معنا</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">الاسئلة الشائعة</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">الوظائف</a>
+                                  </li>
+                                  
+
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+
+                    <!-- user interaction -->
+                    <div class="col-md-3 col-6">
+                        <div class="userInterAction flex_center">
+                            <!-- login -->
+                            <a href="#" class="main_color loginLink"> تسجيل الدخول </a>
+
+                            <!-- language switch -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  En
+                                </button>
+                                <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">AR</a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- toggle navbar -->
+                    <div class="hamburger">
+                      <div class="line1"></div>
+                      <div class="line2"></div>
+                      <div class="line3"></div>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </header>
+        <!-- end header -->
+
+        <!-- start landing page  -->
+        <section id="land_page">
+            <div class="container">
+
+              <section class="land_top d-flex justify-content-start align-items-center mb-2">
+
+                <!-- logo bank -->
+                <div class="logoBank">
+                  <img src="imgs/Logo_Saudi_Arabian_Monetary_Authority.svg.png" alt="Bank Logo">
+                </div>
+
+                <!-- org head -->
+                <div>
+                  <h2 class="mainHead fw-bold mb-3">قارن الاسعار واشتري تأمين</h2>
+
+                  <p class="main_color fw-6">منصة تأمين - حصولك على تأمين أمن ومضمون</p>
+                </div>
+
+              </section>
+
+              <section class="land_bottom mt-4 px-4 pt-4 pb-4">
+
+                <!-- land form -->
+                <form action="">
+
+                  <div class="formTitle">
+                    <h6 class="main_color fw-bold">ابدا بتأمين مركبتك الان</h6>
+                  </div>
+
+                  <div class="formContent">
+
+                    <div class="flex_between mt-3 mb-3">
+
+                      <div class="row w-100 mx-auto">
+                          <div class="col-md-6 mb-3">
+
+                            <div class="select-group position-relative">
+                              <select class="form-select" id="inputGroupSelect01" >
+                                <option disabled selected hidden>نوع التأمين</option>
+                                <option value="1">تأمين جديد</option>
+                                <option value="2">نقل الملكية</option>
+                              </select>
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+
+
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="flatpickr position-relative">
+                              <input type="date" placeholder="اختر تاريخ بداية التأمين"  class="form-control selector"> <!-- input is mandatory -->
+                              <i class="fa-solid fa-calendar main_color"></i>
+                            </div>
+                          </div>
+                      </div>
+
+                      
+                    </div>
+
+                    <button class="btn button1 mt-3 mb-3"> التالي </button>
+
+                  </div>
+
+
+                </form>
+              </section>
+
+            </div>
+
+            <!-- car image -->
+            <div class="LandCarImage wow flipInY">
+              <img src="imgs/image 3.png" alt="car image">
+            </div>
+        </section>
+        <!-- end landing page  -->
+
+        <!-- start steps  -->
+        <section id="steps" class="wow bounceInUp mt-5 mb-5">
+          <div class="container">
+            <h2 class="text-center main_color PageMainHead">خطوات بسيطة</h2>
+            <p class="gray_color text-center mt-3">فقط ثلاث خطوات بسيطة للحصول على افضل العروض</p>
+
+            <section class="stepsCount mt-5 mb-4">
+
+              <div class="row ">
+                <div class="col-md-4 mb-3 position-relative">
+                  <!-- single step -->
+                  <div class="step flex_column">
+
+                    <div class="stepHead mb-5">
+                      <img src="imgs/Group.png" alt="step image">
+                    </div>
+
+                    <h6 class="text-center fw-bold mb-2"> ادفع اونلاين </h6>
+                    <p class="text-center w-75">
+                      هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل
+                    </p>
+
+                  </div>
+
+                  <img src="imgs/Group 23.png" alt="" class="arrowRight">
+                </div>
+                
+                <div class="col-md-4 mb-3 position-relative">
+                  <!-- single step -->
+                  <div class="step flex_column">
+
+                    <div class="stepHead mb-5">
+                      <img src="imgs/Group (1).png" alt="step image">
+                    </div>
+
+                    <h6 class="text-center fw-bold mb-2"> احصل على تأمينك </h6>
+                    <p class="text-center w-75">
+                      هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل
+                    </p>
+
+                  </div>
+                  <img src="imgs/Group 23.png" alt="" class="arrowLeft">
+
+                </div>
+                <div class="col-md-4 mb-3">
+                  <!-- single step -->
+                  <div class="step flex_column">
+
+                    <div class="stepHead mb-5">
+                      <img src="imgs/Group (2).png" alt="step image">
+                    </div>
+
+                    <h6 class="text-center fw-bold mb-2"> قارن العرض </h6>
+                    <p class="text-center w-75">
+                      هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </div>
+        </section>
+        <!-- end steps  -->
+
+        <!-- start why AMMN  -->
+        <section id="whyAmmn" class="">
+          <div class="container">
+            <div class="row align-items-center">
+
+              <div class="col-md-6 mb-3">
+                <div class="whySvg wow flipInX">
+                  <img src="imgs/image 2.svg" alt="svg">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h2 class="main_color PageMainHead PageMainHead2">لماذا أمن ؟</h2>
+                <p class="mt-3">هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل</p>    
+                <p class="mt-3">هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل</p>    
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end why AMMN  -->
+
+        <!-- start partners  -->
+        <section id="partners" class="wow slideInRight mt-5 mb-5 position-relative">
+          <h2 class="text-center main_color PageMainHead">شركائنا</h2>
+          <p class="text-center mt-3 fs-5">بكل فخر نعلن عن شركائنا في النجاح</p>
+
+
+          <div class="navSwiperButtons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+           <!-- Swiper -->
+          <div class="swiper mySwiper mt-5">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <img src="imgs/slide1.webp" alt="slide image">
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/slide2.svg" alt="slide image">
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/slide3.jpg" alt="slide image">
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/slide1.webp" alt="slide image">
+
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/slide3.jpg" alt="slide image">
+
+              </div>
+
+            </div>
+
+            
+          </div>
+
+
+        </section>
+        <!-- end partners  -->
+
+        <!-- start contact info -->
+        <section id="orgContactInfo" class="wow rubberBand">
+          <div class="contianer">
+            <section class="contactInfo ">
+
+              <div class="row flex_between">
+                <div class="col-md-4 mb-3">
+                  <!-- single contact -->
+                  <div class="flex_center justify-content-start">
+
+                    <div class="phone_icon"> <img src="imgs/phone.png" alt="phone icon"> </div>
+
+                    <div>
+                      <p class="gray_color">الهاتف</p>
+                      <h6> <a href="tel:01013756111"> 01013746111 </a> </h6>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">    
+                  <!-- single contact -->
+                  <div class="flex_center justify-content-start">
+                    
+                    <div class="phone_icon"> <img src="imgs/email.png" alt="phone icon"> </div>
+
+                    <div>
+                      <p class="gray_color">البريد الالكتروني</p>
+                      <h6> <a href="mailto:ahmadsamerleo@gmail.com"> ahmadsamerleo@gmail.com </a> </h6>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <!-- single contact -->
+                    <div class="flex_center justify-content-start">
+                      
+                      <div class="phone_icon"> <img src="imgs/whatsapp.png" alt="phone icon"> </div>
+
+                      <div>
+                        <p class="gray_color">الواتس اب</p>
+                        <h6> <a href="https://api.whatsapp.com/send?phone=01013756111"> 01013746111 </a> </h6>
+                      </div>
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+    
+
+            </section>
+          </div>
+        </section>
+        <!-- end contact info -->
+
+        <!-- start footer -->
+        <footer>
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-4">
+
+                <h6 class="fw-bold white_color"> مصرح من قبل </h6>
+                <div class="haveLicense">
+                  <img src="imgs/surface1.png" alt="national bank of suadia">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="footerLinkes flex_column align-items-start">
+                  <a href="#" class="white_color mb-3">سياسة الخصوصية</a>
+                  <a href="#" class="white_color mb-3">الشروط والاحكام</a>
+                  <a href="#" class="white_color mb-3">لوائح البنك المركزي</a>
+                  <a href="#" class="white_color mb-3">الاسئلة الشائعة</a>
+                  <a href="#" class="white_color mb-3">الامانة العامة للفصل في النزاعات والمخالفات التأمينية</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <!-- flow us -->
+                <div>
+                  <h6 class="text-center fw-bold white_color"> تابعنا </h6>
+
+                  <div class="soical_media flex_center">
+                    <a href="#"> <img src="imgs/facebook.png" alt="facebook"> </a>
+                    <a href="#"> <img src="imgs/insta.png" alt="instagram"> </a>
+                    <a href="#"> <img src="imgs/in.png" alt="linked in"> </a>
+                    <a href="#"> <img src="imgs/Twitter.png" alt="tweiter"> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- start copyright -->
+        <section id="copyRight" class="pt-3 pb-1">
+          <p class="fw-bold text-center">جميع الحقوق محفوظة الوطنية لوساطة التأمين &copy; 2020</p>
+        </section>
+    </main>
+
+
+    <!-- fontawesome v.6 script cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap v.5 script cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- jquery v.3 cdn -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- flatpciker script cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- wow.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>    
+    <!-- main scripts -->
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize WOW.JS -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 100,
+        slidesPerGroup: 1,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Initialize flatPicker -->
+    <script>
+      $(".selector").flatpickr();
+    </script>
+</body>
+</html>
